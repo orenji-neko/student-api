@@ -2,7 +2,7 @@ import { Elysia, t } from "elysia";
 import { Prisma, PrismaClient } from "@prisma/client";
 import { DefaultArgs } from "@prisma/client/runtime/library";
 
-const Student = new Elysia({ prefix: "/students" })
+const Student = new Elysia({ prefix: "students" })
   .decorate("prisma", new PrismaClient())
   .model({
     user: t.Object({
